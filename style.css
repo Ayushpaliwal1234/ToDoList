@@ -1,0 +1,94 @@
+ @font-face {
+    font-family: "myFont";
+    src: url("Super Squad.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "myFont", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    width: 360px;
+    min-height: 600px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 25px 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 26px;
+    color: #6a0572;
+    margin-bottom: 20px;
+}
+
+#input-box {
+    width: 80%;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#input-box:focus {
+    border-color: #9f86c0;
+    box-shadow: 0 0 5px rgba(159, 134, 192, 0.5);
+}
+
+.button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #6a0572;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #9f86c0;
+    transform: scale(1.05);
+}
+
+#toDoListPara {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+p {
+    background-color: #fef3f3;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #3e3e3e;
+    border-left: 6px solid #fec89a;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+p:hover {
+    background-color: #fddfdf;
+    cursor: pointer;
+}
